@@ -1,42 +1,32 @@
 <!DOCTYPE html>
-<html>
-<body>
 
-<h1>Sheet 4</h1>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Issues</title>
+        <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+        <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+        <h1>Issues</h1>
 
-<button type="Home Screen" onclick="window.location.href = 'index.html';">Home Screen</button>
-<button type="sheet1" onclick="window.location.href = 'sheet1.html';">Sheet 1</button>
-<button type="sheet2" onclick="window.location.href = 'sheet2.html';">Sheet 2</button>
-<button type="sheet3" onclick="window.location.href = 'sheet3.html';">Sheet 3</button>
-<button type="sheet4" onclick="window.location.href = 'sheet4.html';">Sheet 4</button>
+        <ul>
+            <li><a href="/">Home Screen and Widgets</a></li>
+            <li><a href="/upsclientinfo">UPS Client Info</a></li>
+            <li><a href="/techmahindrainfo">Tech Mahindra Info</a></li>
+            <li><a href="/techmahindraemployeedetails">Tech Mahindra Employee Details</a></li>
+            <li><a href="/issues">Issues</a></li>
+        </ul> 
 
-<table id="myTable">
-  <tr class="header">
-    <th style="width:10%;">Number</th>
-    <th style="width:10%;">Date</th>
-    <th style="width:10%;">Team</th>
-    <th style="width:10%;">Resource Name</th>
-    <th style="width:10%;">Issue Description</th>
-    <th style="width:10%;">Owner</th>
-    <th style="width:10%;">TechM-SPOC</th>
-    <th style="width:10%;">Priority</th>
-    <th style="width:10%;">Status</th>
-    <th style="width:10%;">Resolution Comments</th>
-  </tr>
-  <tr>
-    <td style="width:10%;">1</td>
-    <td style="width:10%;">6/13/2024</td>
-    <td style="width:10%;">Client</td>
-    <td style="width:10%;">Client is unhappy</td>
-    <td style="width:10%;">Saravanan</td>
-    <td style="width:10%;"></td>
-    <td style="width:10%;">High</td>
-    <td style="width:10%;">Unresolved</td>
-    <td style="width:10%;"></td>
-  </tr>
-</table>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
-</body>
+        <div id="myGrid" class="ag-theme-alpine" style="height: 400px;"></div>
+
+        <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
+        <script src="static/script4.js"></script>
+        <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    </body>
 </html>

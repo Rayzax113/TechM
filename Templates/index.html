@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html>
-<body>
 
-<h1>Home Screen</h1>
-
-<button type="Home Screen" onclick="window.location.href = 'index.html';">Home Screen</button>
-<button type="sheet1" onclick="window.location.href = 'sheet1.html';">Sheet 1</button>
-<button type="sheet2" onclick="window.location.href = 'sheet2.html';">Sheet 2</button>
-<button type="sheet3" onclick="window.location.href = 'sheet3.html';">Sheet 3</button>
-<button type="sheet4" onclick="window.location.href = 'sheet4.html';">Sheet 4</button>
-
-</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Screen and Widgets</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Home Screen</h1>
+        <ul>
+            <li><a href="/">Home Screen and Widgets</a></li>
+            <li><a href="/upsclientinfo">UPS Client Info</a></li>
+            <li><a href="/techmahindrainfo">Tech Mahindra Info</a></li>
+            <li><a href="/techmahindraemployeedetails">Tech Mahindra Employee Details</a></li>
+            <li><a href="/issues">Issues</a></li>
+        </ul> 
+    </body>
 </html>

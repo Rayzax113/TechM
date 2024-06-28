@@ -1,122 +1,32 @@
 <!DOCTYPE html>
-<html>
-<body>
 
-<h1>Sheet 2</h1>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech Mahindra Information</title>
+        <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+        <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+        <h1>Tech Mahindra Information</h1>
 
-<button type="Home Screen" onclick="window.location.href = 'index.html';">Home Screen</button>
-<button type="sheet1" onclick="window.location.href = 'sheet1.html';">Sheet 1</button>
-<button type="sheet2" onclick="window.location.href = 'sheet2.html';">Sheet 2</button>
-<button type="sheet3" onclick="window.location.href = 'sheet3.html';">Sheet 3</button>
-<button type="sheet4" onclick="window.location.href = 'sheet4.html';">Sheet 4</button>
+        <ul>
+            <li><a href="/">Home Screen and Widgets</a></li>
+            <li><a href="/upsclientinfo">UPS Client Info</a></li>
+            <li><a href="/techmahindrainfo">Tech Mahindra Info</a></li>
+            <li><a href="/techmahindraemployeedetails">Tech Mahindra Employee Details</a></li>
+            <li><a href="/issues">Issues</a></li>
+        </ul> 
 
-<table id="myTable">
-  <tr class="header">
-    <th style="width:3.125%;">Requirement Number</th>
-    <th style="width:3.125%;">Emp ID</th>
-    <th style="width:3.125%;">First Name</th>
-    <th style="width:3.125%;">Last Name</th>
-    <th style="width:3.125%;">TechM Mail ID</th>
-    <th style="width:3.125%;">Profile Link</th>
-    <th style="width:3.125%;">Email ID</th>
-    <th style="width:3.125%;">Mobile</th>
-    <th style="width:3.125%;">External</th>
-    <th style="width:3.125%;">Submission Date</th>
-    <th style="width:3.125%;">EXP</th>
-    <th style="width:3.125%;">Location</th>
-    <th style="width:3.125%;">City</th>
-    <th style="width:3.125%;">Country</th>
-    <th style="width:3.125%;">Date of Joining</th>
-    <th style="width:3.125%;">Customer Billing Start Date</th>
-    <th style="width:3.125%;">TechM Interview Date</th>
-    <th style="width:3.125%;">Interview Feedback Link</th>
-    <th style="width:3.125%;">Customer Interview Date</th>
-    <th style="width:3.125%;">Customer Feedback</th>
-    <th style="width:3.125%;">Status</th>
-    <th style="width:3.125%;">Remarks</th>
-    <th style="width:3.125%;">Remarks 2</th>
-    <th style="width:3.125%;">Sourced to Client Date</th>
-    <th style="width:3.125%;">Transition Month</th>
-    <th style="width:3.125%;">ADM</th>
-    <th style="width:3.125%;">Team</th>
-    <th style="width:3.125%;">App Name</th>
-    <th style="width:3.125%;">Skill</th>
-    <th style="width:3.125%;">Technology Skill</th>
-    <th style="width:3.125%;">Skill Level</th>
-    <th style="width:3.125%;">FTE/Subcon</th>
-  </tr>
-  <tr>
-    <td>01</td>
-    <td>111111</td>
-    <td>Oliver</td>
-    <td>Santos</td>
-    <td>oliver.santos@techmahindra.com</td>
-    <td>www.oliversantos.com</td>
-    <td>santosoliver@hotmail.com</td>
-    <td>425-345-6789</td>
-    <td></td>
-    <td>5/1/2024</td>
-    <td>3</td>
-    <td>Onsite</td>
-    <td>Seattle</td>
-    <td>WA</td>
-    <td>6/1/2024</td>
-    <td>6/1/2024</td>
-    <td>5/15/2024</td>
-    <td>www.feedback.com</td>
-    <td>5/15/2024</td>
-    <td>Good candidate</td>
-    <td>Active</td>
-    <td></td>
-    <td></td>
-    <td>6/13/2024</td>
-    <td>June</td>
-    <td></td>
-    <td>Technology</td>
-    <td>Facebook</td>
-    <td>People</td>
-    <td>Java, Python</td>
-    <td>Advanced</td>
-    <td></td>
-  </tr>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
-  <tr>
-    <td>02</td>
-    <td>222222</td>
-    <td>Brian</td>
-    <td>Tran</td>
-    <td>brian.tran@techmahindra.com</td>
-    <td>www.briantran.com</td>
-    <td>briantt@gmail.com</td>
-    <td>123-456-7890</td>
-    <td>987-654-3210</td>
-    <td>3/1/2024</td>
-    <td>5</td>
-    <td>Onsite</td>
-    <td>Austin</td>
-    <td>TX</td>
-    <td>5/1/2024</td>
-    <td>5/1/2024</td>
-    <td>4/18/2024</td>
-    <td>www.feedback2.com</td>
-    <td>4/20/2024</td>
-    <td>Great candidate</td>
-    <td>Hired</td>
-    <td>Good technical skills</td>
-    <td></td>
-    <td>5/3/2024</td>
-    <td>May</td>
-    <td></td>
-    <td>Client</td>
-    <td>Facebook</td>
-    <td>People</td>
-    <td>Java, Python</td>
-    <td>Advanced</td>
-    <td></td>
-  </tr>
-</table>
+        <div id="myGrid" class="ag-theme-alpine" style="height: 400px;"></div>
 
-</body>
+        <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
+        <script src="static/script2.js"></script>
+        <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    </body>
 </html>
